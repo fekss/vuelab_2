@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import './theme.css'
+import ResumeForm from './components/ResumeForm'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.component('resume-form', ResumeForm)
+
+app.mount('#app')
